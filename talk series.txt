@@ -1,0 +1,34 @@
+harus ada AI nya terkait github ataupun yang lain
+
+# JUDUL ->
+- pastin ada task nya
+
+# static code analysis (pemeriksaan kode tanpa di eksekusinya, biasanya dilakukan untuk menemukan kesalahan bugs
+    atau rekomendasi best practice dalam kode tersebut)
+- sonarlint local (vscode)
+    kegunaannya rekomendasi code analysis
+dan contoh
+
+# code style
+
+biasanya disepakati oleh tim pengembang atau komunitas untuk konsistensi dalam proyek perangkat lunak.
+Hal ini membantu memudahkan kolaborasi, pemeliharaan, dan pembacaan kode oleh orang lain,
+serta mengurangi kebingungan dan kesalahan yang mungkin timbul karena gaya penulisan kode yang berbeda-beda.
+
+contoh kasusnya ketika ada 2 atau lebih programer dengan coding style berbeda beda. misalkan ada yang menggunakan 2 spasi, 4 spasi, ataupun tab
+ketika dilakukan format ulang terhadap code nya, ini bisa jadi semua file berubah. padahal kita hanya merubah 10 baris.
+dan nanti programmer yang lain pun melakukan format ulang dan berubah lagi.
+ini kan aneh banget ya ketika ada pull request tapi perubahannya banyak banget gara styeling 2 spasi menjadi 4 spasi.
+maka dari itu perlu dilakukan code style yang standar atau sama antar programer.
+.editorconfig
+
+- unit test and coverage
+
+amend commit
+git commit -m -ammend ""
+
+good commit message
+tkt:JIRA msg: FEAT
+https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
+
+nyiapin pertanyaan dan jawaban
