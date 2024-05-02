@@ -1,16 +1,16 @@
 harus ada AI nya terkait github ataupun yang lain
 
-# JUDUL ->
+# JUDUL -> Avoiding Blunders: Checklist for Preparing Code Before Pushing to GitHub
 - pastin ada task nya
 
-# static code analysis (pemeriksaan kode tanpa di eksekusinya, biasanya dilakukan untuk menemukan kesalahan bugs
+# STATIC CODE ANALYSIS
+    (pemeriksaan kode tanpa di eksekusinya, biasanya dilakukan untuk menemukan kesalahan bugs
     atau rekomendasi best practice dalam kode tersebut)
 - sonarlint local (vscode)
     kegunaannya rekomendasi code analysis
 dan contoh
 
-# code style
-
+# code style, php cs fixer
 biasanya disepakati oleh tim pengembang atau komunitas untuk konsistensi dalam proyek perangkat lunak.
 Hal ini membantu memudahkan kolaborasi, pemeliharaan, dan pembacaan kode oleh orang lain,
 serta mengurangi kebingungan dan kesalahan yang mungkin timbul karena gaya penulisan kode yang berbeda-beda.
@@ -20,15 +20,22 @@ ketika dilakukan format ulang terhadap code nya, ini bisa jadi semua file beruba
 dan nanti programmer yang lain pun melakukan format ulang dan berubah lagi.
 ini kan aneh banget ya ketika ada pull request tapi perubahannya banyak banget gara styeling 2 spasi menjadi 4 spasi.
 maka dari itu perlu dilakukan code style yang standar atau sama antar programer.
-.editorconfig
+.editorconfig (ctrl + p >format document)
 
-- unit test and coverage
+php cs fixer
+php coding standar seperti yang didefinisikan di PSR-1, PSR-2 dalam hal penulisan
+vendor\bin\php-cs-fixer.bat fix app\Features\Auth\Login\LoginController.php
 
-amend commit
-git commit -m -ammend ""
+# unit test and coverage
+memastikan code yang sudah dibuat sesuai dengan apa yang diharapkan. tidak hanya apa yang sudah dibuat, unit test yang lainnya juga harus diperhatikan.
+kenapa karena feature atau kode yang kita buat berimpact ke feature lainnya.
+php artisan test --coverage --html
 
-good commit message
-tkt:JIRA msg: FEAT
+
+# good commit message
+membuat commit message yang baik itu ya harus mempresentasikan apa yang nanti dipush.
+enggak cuma fixing, tambahin validation. tapi harus lengkap fixing login validation etc dll
 https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
 
+# PRE COMMIT
 nyiapin pertanyaan dan jawaban
